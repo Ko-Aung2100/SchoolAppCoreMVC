@@ -8,7 +8,7 @@ namespace SchoolAppCoreMVC.Models
         public int Credits { get; set; }
         public int DepartmentID { get; set; }
 
-        public required Department Department { get; set; }
+        public Department? Department { get; set; }
         public  ICollection<Enrollment>? Enrollments { get; set; }
     }
 }
